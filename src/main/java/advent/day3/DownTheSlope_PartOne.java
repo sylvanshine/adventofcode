@@ -10,7 +10,7 @@ public class DownTheSlope_PartOne {
     static int trees = 0;
     static int slopePatternLength=0;
     public static void main(String[] args) throws Exception{
-      Scanner scanner = new Scanner(new File(System.getProperty("user.dir") + "/src/main/java/adventofcode/day3/input.txt"));
+      Scanner scanner = new Scanner(new File(System.getProperty("user.dir") + "/src/main/java/advent/day3/input3.txt"));
       List<List<Character>> slope = new ArrayList<>();
       while(scanner.hasNextLine())
       {

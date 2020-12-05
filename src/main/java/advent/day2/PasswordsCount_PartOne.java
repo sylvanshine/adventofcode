@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 
 public class PasswordsCount_PartOne {
   public static void main(String[] args) throws Exception{
-    Scanner scanner = new Scanner(new File(System.getProperty("user.dir") + "/src/main/java/adventofcode/day2/input.txt"));
+    Scanner scanner = new Scanner(new File(System.getProperty("user.dir") + "/src/main/java/advent/day2/input3.txt"));
     Pattern pattern = Pattern.compile("^(\\d+)-(\\d+)\\s([a-zA-Z]):\\s([a-zA-Z]+)");
     int validCount = 0;
     while(scanner.hasNextLine())

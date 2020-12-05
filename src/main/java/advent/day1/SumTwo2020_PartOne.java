@@ -9,7 +9,7 @@ public class SumTwo2020_PartOne {
   private static List<Integer> numbers = new ArrayList<>();
   private static int numberOne = 0;
   public static void main(String[] args) throws Exception{
-    Scanner scanner = new Scanner(new File(System.getProperty("user.dir") + "/src/main/java/adventofcode/day1/input.txt"));
+    Scanner scanner = new Scanner(new File(System.getProperty("user.dir") + "/src/main/java/advent/day1/input3.txt"));
 
     while(scanner.hasNextInt())
     {
