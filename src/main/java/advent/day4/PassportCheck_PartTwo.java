@@ -14,22 +14,23 @@ public class PassportCheck_PartTwo {
       String line = scanner.nextLine();
       if((line.isEmpty() && passAggr.length() != 0) || !scanner.hasNextLine()){
         if(!scanner.hasNextLine()){
-          passAggr.append(line);
+          passAggr.append(line).append(" ");
         }
         String passport = passAggr.toString();
-        if(passport.matches(".*byr:(19[2-9]\\d|20[012]).*")
-            && passport.matches(".*iyr:20(1\\d|20).*")
-            && passport.matches(".*eyr:20(2\\d|30).*")
-            && passport.matches(".*hgt:(1([5-8]\\d|9[0-3])cm|(59|6[0-9]|7[0-6])in).*")
-            && passport.matches(".*hcl:#[0-9a-f]{6}.*")
-            && passport.matches(".*ecl:(amb|blu|brn|gry|grn|hzl|oth).*")
-            && passport.matches(".*pid:\\d{9}.*")
+        if(
+            passport.matches(".*byr:(19[2-9]\\d|200[012])\\s+.*")
+            && passport.matches(".*iyr:20(1\\d|20)\\s+.*")
+            && passport.matches(".*eyr:20(2\\d|30)\\s+.*")
+            && passport.matches(".*hgt:(1([5-8]\\d|9[0-3])cm|(59|6[0-9]|7[0-6])in)\\s+.*")
+            && passport.matches(".*hcl:#[0-9a-f]{6}\\s+.*")
+            && passport.matches(".*ecl:(amb|blu|brn|gry|grn|hzl|oth)\\s+.*")
+            && passport.matches(".*pid:\\d{9}\\s+.*")
         ){
-          validPasses++;
+        validPasses++;
         }
         passAggr = new StringBuilder();
       } else {
-        passAggr.append(line);
+        passAggr.append(line).append(" ");
       }
     }
 
