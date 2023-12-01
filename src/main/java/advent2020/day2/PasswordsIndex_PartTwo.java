@@ -1,4 +1,4 @@
-package advent.day2;
+package advent2020.day2;
 
 import java.io.File;
 import java.util.Scanner;

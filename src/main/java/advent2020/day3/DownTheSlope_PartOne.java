@@ -1,4 +1,4 @@
-package advent.day3;
+package advent2020.day3;
 
 import java.io.File;
 import java.util.ArrayList;
